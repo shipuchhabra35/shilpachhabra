@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(#190547 60%, #6031c0 60%);
+            height:100vh;
+            
+        }
+.container{
+    height:600px;
+    width:600px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    
+   
+}
+.diya{
+    height:150px;
+    width:300px;
+    background-color: yellow;
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:1px solid white;
+   border-radius:  0px 0px 200px 200px;
+}
+.shadow{
+    height: 80px;
+    width: 350px;
+    background-color: rgb(141, 132, 134);
+    position: absolute;
+    top: 65%;
+    border-radius: 50%;
+    left: 21%;
+    z-index: -1;
+
+}
+.inside{
+    height: 45px;
+    width: 300px;
+    position: absolute;
+    top: -17%;
+    left: 0%;
+    background-color: orangered;
+    border-radius: 50%;
+
+}
+.flame{
+    height: 200px;
+    width: 162px;
+    background-color: white;
+    position: absolute;
+    top: -140%;
+    left: 23%;
+    border-radius: 160px 0px;
+    transform: rotate(-36deg);
+    animation: move 4s linear infinite;
+}
+
+   
+
+
+.flemes{
+    height: 132px;
+    width: 107px;
+    background-color: orange;
+    position: absolute;
+    top: -90%;
+    left: 31%;
+    border-radius: 160px 0;
+    transform: rotate(-38deg);
+}
+.light{
+    height: 280px;
+    width: 300px;
+    position: absolute;
+    top: -175%;
+    border-radius: 50%;
+    background-color: #a4dddf7a;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="diya">
+            <div class="inside"></div>
+            <div class="flame"></div>
+            <div class="flemes"></div>
+            <div class="light"></div>
+        </div>
+        <div class="shadow"></div>
+
+    </div>
+    
+</body>
+</html>
